@@ -93,7 +93,7 @@ body { margin-top:20px; }
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-100%, -100%);
   opacity: 0;
 }
 .wizard.completed .wizard__content {
@@ -162,10 +162,10 @@ body { margin-top:20px; }
   margin: 0;
 }
 .panel.movingOutBackward {
-  transform: translateX(-820px);
+  transform: translateX(-1000px);
 }
 .panel.movingOutFoward {
-  transform: translateX(820px);
+  transform: translateX(1000px);
 }
 .panel.movingIn {
   transform: translateX(0);

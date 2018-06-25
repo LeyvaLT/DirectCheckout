@@ -9,7 +9,10 @@ require_once("../conekta-php/lib/Conekta.php");
 \Conekta\Conekta::setApiKey("key_c727zEVsYvwEQqsmU6rdyg");
 \Conekta\Conekta::setApiVersion("2.0.0");
 
-$x = $_POST['nombre'];
+$cardName = $_POST['nombre'];
+$cardNumber = $_POST['nombre'];
+$canectaTokenId = $_POST['conektaTokenId'];
+$plan = $_POST['plan'];
 
 
 
@@ -24,7 +27,7 @@ try {
             "payment_sources" => array(
                 array(
                     "type" => "card",
-                    "token_id" => "tok_test_visa_4242"
+                    "token_id" => $canectaTokenId
                 )
             )//payment_sources
         )//customer
@@ -38,7 +41,7 @@ try {
 }
 
 /*####################################### - SE CREA UN PLAN DE PAGO - ################################################*/
-
+/*
 $plan = \Conekta\Plan::create(
     array(
         "id" => "plan-mensual",
@@ -48,8 +51,12 @@ $plan = \Conekta\Plan::create(
         "interval" => "month"
     )//plan
 );
-
+*/
 /*######################################### - SE EFECTUA LA SUSCRIPCION - ############################################*/
+
+if ($plan == 1) {
+
+}
 
 $subscription = $customer->createSubscription(
     array(
