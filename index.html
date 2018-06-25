@@ -1,164 +1,222 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <script src="https://use.fontawesome.com/6a6312675e.js"></script>
-  <script src="https://use.fontawesome.com/6a6312675e.js"></script>
-
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/6a6312675e.js"></script>
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
     <div id="wizard" class="wizard">
-      <div class="wizard__content">
-        <header class="wizard__header">
-          <div class="wizard__header-overlay"></div>
+        <div class="wizard__content">
+            <header class="wizard__header">
+                <div class="wizard__header-overlay"></div>
 
-          <div class="wizard__header-content">
-            <h1 class="wizard__title" >Suscribete a uno de nuestros Planes</h1>
-            <p class="wizard__subheading"></p>
-          </div>
-
-          <div class="wizard__steps">
-            <nav class="steps">
-            <div class="step">
-              <div class="step__content">
-                <p class="step__number"><i class="fa fa-cubes" aria-hidden="true"></i>
-
-            </p>
-                  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                  </svg>
-
-                  <div class="lines">
-                    <div class="line -start">
-                    </div>
-
-                    <div class="line -background">
-                    </div>
-
-                    <div class="line -progress">
-                    </div>
-                  </div>
+                <div class="wizard__header-content">
+                    <h1 class="wizard__title">Suscribete a uno de nuestros Planes</h1>
+                    <p class="wizard__subheading"></p>
                 </div>
-              </div>
 
-              <div class="step">
-                <div class="step__content">
-                  <p class="step__number"><i class="fa fa-cogs" aria-hidden="true"></i>
+                <div class="wizard__steps">
+                    <nav class="steps">
+                        <div class="step">
+                            <div class="step__content">
+                                <p class="step__number"><i class="fa fa-cubes" aria-hidden="true"></i>
 
-    </p>
-                  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                  </svg>
+                                </p>
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                </svg>
 
-                  <div class="lines">
-                    <div class="line -background">
-                    </div>
+                                <div class="lines">
+                                    <div class="line -start">
+                                    </div>
 
-                    <div class="line -progress">
-                    </div>
-                  </div>
+                                    <div class="line -background">
+                                    </div>
+
+                                    <div class="line -progress">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step__content">
+                                <p class="step__number"><i class="fa fa-cogs" aria-hidden="true"></i>
+
+                                </p>
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                </svg>
+
+                                <div class="lines">
+                                    <div class="line -background">
+                                    </div>
+
+                                    <div class="line -progress">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step__content">
+                                <p class="step__number"><i class="fa fa-user" aria-hidden="true"></i></p>
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                </svg>
+
+                                <div class="lines">
+                                    <div class="line -background">
+                                    </div>
+
+                                    <div class="line -progress">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step__content">
+                                <p class="step__number"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></p>
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                </svg>
+
+                                <div class="lines">
+                                    <div class="line -background">
+                                    </div>
+
+                                    <div class="line -progress">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </nav>
                 </div>
-              </div>
+            </header>
 
-              <div class="step">
-                <div class="step__content">
-                  <p class="step__number"><i class="fa fa-user" aria-hidden="true"></i></p>
-                  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                  </svg>
 
-                  <div class="lines">
-                    <div class="line -background">
-                    </div>
+            <div class="panels">
+                <div class="panel">
+                    <header class="panel__header">
+                        <h2 class="panel__title">Selecciona una linea:</h2>
 
-                    <div class="line -progress">
-                    </div>
-                  </div>
+                    </header>
+
+                    <input type="radio" id="3a5" name="chk_group" checked/>
+                    <img src="http://www.dadbox.mx/wp-content/uploads/2018/05/3a5.png" width="250px" height="250px"
+                         for="3a5">
+                    <input type="radio" id="6a11" name="chk_group"/>
+                    <img src="http://www.dadbox.mx/wp-content/uploads/2018/05/6a11.png" width="250px" height="250px"
+                         for="6a11">
+
+
                 </div>
-              </div>
-              <div class="step">
-                <div class="step__content">
-                  <p class="step__number"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></p>
-                  <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                  </svg>
 
-                  <div class="lines">
-                    <div class="line -background">
-                    </div>
+                <div class="panel" id="plan">
+                    <header class="panel__header">
+                        <h2 class="panel__title">Selecciona un plan:</h2>
+                    </header>
 
-                    <div class="line -progress">
-                    </div>
-                  </div>
+
                 </div>
-              </div>
 
-            </nav>
+                <div class="panel">
+                    <header class="panel__header">
+                        <h2 class="panel__title">Información de Contacto</h2>
+                    </header>
+                    [ec_cart]
+                </div>
+                <div class="panel">
+                    <header class="panel__header">
+                        <h2 class="panel__title">Checkout</h2>
+                    </header>
+                    <form action="back/conekta.php" method="POST" id="card-form">
+                        <span class="card-errors"></span>
+                        <div>
+                            <label>
+                                <span>Nombre del titular de la tarjeta</span>
+                                <input size="20" data-conekta="card[name]" type="text">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <span>Numero de la tarjeta</span>
+                                <input size="20" data-conekta="card[number]" type="text">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <span>CVC</span>
+                                <input size="4" data-conekta="card[cvc]" type="text">
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <span>Fecha de caducidad (MM/YYYY)</span>
+                                <input size="2" data-conekta="card[exp_month]" type="text">
+                            </label>
+                            <span>/</span>
+                            <input size="4" data-conekta="card[exp_year]" type="text">
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+
+                </div>
             </div>
-        </header>
 
+            <div class="wizard__footer">
 
-        <div class="panels">
-          <div class="panel">
-              <header class="panel__header">
-                <h2 class="panel__title">Selecciona una linea:</h2>
-
-              </header>
-
-              <input type="radio" id="3a5" name="chk_group" checked/>
-                  <img src="http://www.dadbox.mx/wp-content/uploads/2018/05/3a5.png" width="250px" height="250px" for ="3a5">
-              <input type="radio" id="6a11" name="chk_group" />
-                  <img src="http://www.dadbox.mx/wp-content/uploads/2018/05/6a11.png" width="250px" height="250px" for ="6a11">
-
-
-
-
-          </div>
-
-          <div class="panel" id="plan">
-             <header class="panel__header">
-                <h2 class="panel__title">Selecciona un plan:</h2>
-             </header>
-
-
-             </div>
-
-          <div class="panel">
-            <header class="panel__header">
-              <h2 class="panel__title">Información de Contacto</h2>
-             </header>
-                [ec_cart]
-            </div>
-          <div class="panel">
-            <header class="panel__header">
-              <h2 class="panel__title">Checkout</h2>
-             </header>
+                <button class="button previous">Regresar</button>
+                <button class="button next" onclick="setPlanes()">Siguiente</button>
 
             </div>
-
         </div>
 
-        <div class="wizard__footer">
-
-        <button class="button previous">Regresar</button>
-        <button class="button next" onclick="setPlanes()">Siguiente</button>
-
-      </div>
-      </div>
-
-      <h1 class="wizard__congrats-message">
-        Felicidades, has completado tu suscripcion satisfactoriamente!
-      </h1>
+        <h1 class="wizard__congrats-message">
+            Felicidades, has completado tu suscripcion satisfactoriamente!
+        </h1>
     </div>
-  </div>
+</div>
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script type="text/javascript" src="https://cdn.conekta.io/js/latest/conekta.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+    Conekta.setPublicKey('key_Lc8EPyqYn54VpMbfSP9pn9A');
+
+    var conektaSuccessResponseHandler = function(token) {
+        var $form = $("#card-form");
+        //Add the token_id in the form
+        $form.append($('<input name="conektaTokenId" id="conektaTokenId" type="hidden">').val(token.id));
+        $form.get(0).submit(); //Submit
+    };
+    var conektaErrorResponseHandler = function(response) {
+        var $form = $("#card-form");
+        $form.find(".card-errors").text(response.message_to_purchaser);
+        $form.find("button").prop("disabled", false);
+    };
+
+    //jQuery generate the token on submit.
+    $(function () {
+        $("#card-form").submit(function(event) {
+            var $form = $(this);
+            // Prevents double clic
+            $form.find("button").prop("disabled", true);
+            Conekta.Token.create($form, conektaSuccessResponseHandler, conektaErrorResponseHandler);
+            return false;
+        });
+    });
+</script>
+
 </html>
