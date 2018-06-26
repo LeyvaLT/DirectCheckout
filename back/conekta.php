@@ -29,7 +29,24 @@ try {
                     "type" => "card",
                     "token_id" => $canectaTokenId
                 )
-            )//payment_sources
+            ),
+            "shipping_contacts" => array(
+
+                    array(
+                        "address" => array(
+                        "country" => "Mexico",
+                        "object" => "shipping_address",
+                        "street1" => "Nuevo Leon 4",
+                        "city" => "Ciudad de Mexico",
+                        "state" => "Ciudad de Mexico",
+                        "postal_code" => "06100",
+                        "residential" =>     true
+                        )
+                    )
+
+            )
+
+            //payment_sources
         )//customer
     );
 } catch (\Conekta\ProccessingError $error){
