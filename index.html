@@ -115,13 +115,19 @@
 
                         </header>
 
-                        <input type="radio" id="3a5" name="chk_group" checked/>
+                        <input type="radio" id="3a5" name="chk_group" style="display: none;"/>
+                        <input type="image" src="http://www.dadbox.mx/wp-content/uploads/2018/05/3a5.png" width="250px" height="250px"
+                               for="3a5" alt="Submit" onclick="lineOneIsSelected()">
+                        <!--
                         <img src="http://www.dadbox.mx/wp-content/uploads/2018/05/3a5.png" width="250px" height="250px"
                              for="3a5">
-                        <input type="radio" id="6a11" name="chk_group"/>
-                        <img src="http://www.dadbox.mx/wp-content/uploads/2018/05/6a11.png" width="250px" height="250px"
+                        -->
+                        <input type="radio" id="6a11" name="chk_group" style="display: none;"/>
+                        <input type="image" src="http://www.dadbox.mx/wp-content/uploads/2018/05/6a11.png" width="250px" height="250px"
+                               for="6a11" alt="Submit" onclick="lineTwoIsSelected()">
+                        <!-- <img src="http://www.dadbox.mx/wp-content/uploads/2018/05/6a11.png" width="250px" height="250px"
                              for="6a11">
-
+                         -->
 
                     </div>
 
@@ -164,7 +170,7 @@
                             <h2 class="panel__title">Checkout</h2>
                         </header>
                         <!-- <form action="back/conekta.php" method="POST" id="card-form"> -->
-                        <span class="card-errors"></span>
+
                         <div class="form-group">
                             <label>
                                 <span>Nombre del titular de la tarjeta</span>
@@ -188,15 +194,15 @@
                                 <span>Fecha de caducidad (MM/YYYY)</span>
                                 <br>
                                 <input size="2" style="width: 50px; display: inline-block;" class="form-control"
-                                       data-conekta="card[exp_month]" type="text">
+                                       data-conekta="card[exp_month]" type="text"/>
                                 <span style="font-size: 2rem;"> / </span>
                                 <input size="4" style="width: 50px; display: inline-block;" class="form-control"
-                                       data-conekta="card[exp_year]" type="text">
+                                       data-conekta="card[exp_year]" type="text"/>
                             </label>
 
                         </div>
 
-
+                        <span class="card-errors"></span>
                     </div>
 
                 </div>

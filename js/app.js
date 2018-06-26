@@ -1,23 +1,34 @@
+/*######################################## - Seleccionar Lineas - ####################################################*/
+
+function lineOneIsSelected() {
+// de 3a5 años de edad
+    var plan = $("#3a5");
+    plan.prop('checked', true);
+}
+
+function lineTwoIsSelected() {
+// de 6a11 años de edad
+    var plan = $("#6a11");
+    plan.prop('checked', true);
+}
+
 /*############################################# - ADDR - #############################################################*/
 //https://api-codigos-postales.herokuapp.com/v2/codigo_postal/59350
 
 
-
-
 /*##################################### - Despliegue de planes - #####################################################*/
 
-/*
-        function setPlanes() {
 
-          var pack1 = document.getElementById("3a5").checked;
-          var pack2 = document.getElementById("6a11").checked;
+function setPlanes() {
 
-          if(pack1 == true){
-            document.getElementById("plan").innerHTML="[ec_product productid='1' style='1' ]";
-          }else document.getElementById("plan").innerHTML="[ec_product productid='2' style='1' ]";
-          
-        }
-*/
+    var pack1 = document.getElementById("3a5").checked;
+    var pack2 = document.getElementById("6a11").checked;
+
+    if (pack1 == true) {
+        document.getElementById("plan").innerHTML = "[ec_product productid='1' style='1' ]";
+    } else document.getElementById("plan").innerHTML = "[ec_product productid='2' style='1' ]";
+
+}
 
 
 /*############################################# - Wizard - ###########################################################*/

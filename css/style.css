@@ -1,21 +1,43 @@
 /*############################################## - Main Styles - #####################################################*/
 
-.addr{
+.addr {
     display: inline-block;
     padding: 1rem;
     margin-left: 3rem;
 }
 
-.addr div{
+.addr div {
 
     display: inline-block;
     margin: 0.5rem;
 
 }
-div .panels{
+
+div .panels {
     margin-left: 2rem;
 }
-/*####################################################################################################################*/
+
+
+input[type=image]{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=image]:focus{
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+/*############################################ - Wizard Styles - #####################################################*/
+
 body, html {
     padding: 0;
     margin: 0;
@@ -135,7 +157,7 @@ body {
     position: absolute;
     top: 50%;
     left: 65%;
-    transform: translate(-100%, -100%);
+    transform: translate(-100%, -200%);
     opacity: 0;
 }
 
@@ -193,7 +215,7 @@ body {
 .panel {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 62px;
     transition: .5s all;
     padding: 50px;
 }
@@ -286,7 +308,7 @@ body {
 
 .checkmark {
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 50%;
     transform: translateX(-50%);
     width: 50px;
